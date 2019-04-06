@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Formulaire de enseignant</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../js/validerEns.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.center {
+  margin: auto;
+  width: 50%;
+  
+ 
+}
+
+</style>
+</head>
+<body class="w3-light-grey	">
+<br><br>
+<div class="center" >
+<div class="w3-card-4"  >
+  <div class="w3-container  w3-teal">
+    <img src="../images/icon.png" alt="image" width="50" height="50" align="right" ><h2>Formulaire de enseignant</h2>
+  </div>
+  <form class="w3-container" enctype="multipart/form-data" action="../php/enregEns.php" method="POST" name="form1"  id="form1" onSubmit="validerEns()" >
+    <p>      
+    <label class="w3-text"><b>Numéro enseignant</b></label>
+    <input class="w3-input w3-border  "  type="text"   name="numEns" id="numEns"></p>
+  <p>
+      <label class="w3-text"><b>Session</b></label>
+  <select class="w3-select  w3-border " name="session" id="session">
+    <option value="Automne">Automne</option>
+    <option value="Hiver">Hiver</option>
+	<option value="Printemp">Printemp</option>
+    <option value="Été">Été</option>
+  </select>
+  </p>
+  <p>
+      <label class="w3-text"><b>Numéro du cours</b></label>
+  <select class="w3-select w3-border " name="numcou" id="numcou">
+    <option value="420-175-AH">420-175-AH</option>
+    <option value="420-178-AH">420-178-AH</option>
+    <option value="420-179-AH">420-179-AH</option>
+	<option value="420-180-AH">420-180-AH</option>
+  </select>
+  </p>
+  <p>
+        <label class="w3-text"><b>Type fichier</b></label>
+  <select class="w3-select w3-border " name="type" id="type">
+    <option value="Notes de cours">Notes de cours</option>
+    <option value="Labos">Labos</option>
+    <option value="Exercices">Exercices</option>
+  </select>
+  </p>
+  <p>
+   <label class="w3-text"><b>Titre</b></label>
+    <input class="w3-input w3-border  "  type="text"   name="titre" id="titre"></p>
+	<p>
+	 <label class="w3-text"><b>Fichier</b></label>
+    <input class="w3-input w3-border  "  type="file"   name="fichier"></p>
+    <p>
+		     <br><br><input  class="w3-btn  w3-teal w3-padding-large" type="submit" value="Envoyer"   >
+             <a href="../index.html" class="w3-btn w3-teal w3-padding-large">Accueil</a>
+
+    </p>
+  </form>
+</div>
+</div>
+</body>
+</html> 
